@@ -46,13 +46,14 @@ winNumber.sort(
 console.log('당첨숫자들',winNumber,'보너스',bonus)
 
 // 당첨 공 출력
-var RESULT = document.querySelector('#result');
+var result = document.querySelector('#result');
 
 for (var i = 0; i < winNumber.length; i+=1){
     // setTimeout(function(){
         var ball = document.createElement('div');
         ball.textContent=winNumber[i];
-        RESULT.appendChild(ball);
+        console.log(result)   
+        result.appendChild(ball);
     // },500);
 }
 
